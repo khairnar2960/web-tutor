@@ -1,9 +1,17 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*/
+@font-face {
+	font-family: 'MyFont';
+	src: url('fonts/GajrajOne-Regular.ttf');
+}
 * {
 	box-sizing: border-box;
 }
 body {
 	margin: 0;
 	padding: 0;
+	font-family: Verdana;
 }
 .navbar {
 	width: 100%;
@@ -64,8 +72,58 @@ body {
 	object-position: center;
 	border-radius: 10px
 }
-
-
+.jombotron {
+	line-height: 4em;
+	padding: 75px;
+	/* Engrave effect
+	background-color: lightgrey;
+	color: lightgrey;
+	text-shadow: -1px -1px 1px grey,  1px 1px 1px darkgrey;
+	*/
+	/* Bump Effect */
+	/* background-color: lightgrey;
+	color: lightgrey;
+	text-shadow: 1px 1px 1px grey; */
+	background-color: lightgrey;
+}
+.jombotron .jombotron-title {
+	font-family: MyFont;
+	font-size: 3rem;
+	/*font-weight: bold;*/
+	/*
+		rem -> relative to body
+		em -> relative to element
+	*/
+}
+.jombotron .jombotron-subtitle {
+	font-size: 1.5em;
+}
+button {
+	background-color: transparent;
+	color: black;
+	border: 1px solid black;
+	padding: 0.25rem 0.5rem;
+	/*
+	border-color: red;
+	border-style: solid;
+	border-width: 5px;
+	*/
+}
+/* Psudo classes */
+/*
+:hover
+:active
+:focus
+:checked
+*/
+button:hover {
+	background-color: black;
+	color: white;
+}
+button.btn-md {
+	font-size: 1.25rem;
+	padding: 0.5rem 1rem;
+}
 
 
 
