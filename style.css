@@ -18,7 +18,7 @@ body {
 }
 .navbar {
 	width: 100%;
-	background-color: lightblue;
+	background-color: #5bc5d7;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -195,9 +195,61 @@ footer .col-4 img {
 	object-position: left;
 	border-radius: unset;
 }
-
-
-
-
-
+table {
+	border-collapse: collapse;
+	text-align: center;
+	width: 100%;
+	min-width: 500px;
+	max-width: 1100px;
+	margin: auto;
+}
+tr th, tr td {
+	padding: 1em 0.5em;
+	width: calc(100% / 4) !important;
+	border-color: grey;
+}
+table.no-border tr th, 
+table.no-border tr td {
+	border: 0;
+}
+tr th:first-child, tr td:first-child {
+	text-align: left;
+}
+/*
+tr th:last-child, tr td:last-child {
+	text-align: right;
+}
+tr th:nth-child(3), tr td:nth-child(3) {
+	text-align: left;
+}
+*/
+thead tr th {
+	background-color: grey;
+	color: white;
+}
+tfoot tr th {
+	background-color: darkgrey;
+	color: white;
+}
+table.even-odd-column tr th:nth-child(even),
+table.even-odd-column tr td:nth-child(even) {
+	background-color: lightblue;
+}
+table.even-odd-column tr th:nth-child(odd),
+table.even-odd-column tr td:nth-child(odd) {
+	background-color: lightgreen;
+}
+table.even-odd-row tbody tr:nth-child(even) th,
+table.even-odd-row tbody tr:nth-child(even) td {
+	background-color: pink;
+}
+table.even-odd-row tbody tr:nth-child(odd) th,
+table.even-odd-row tbody tr:nth-child(odd) td {
+	background-color: lightgreen;
+}
+table.hover tr:hover th,
+table.hover tr:hover td {
+	background-color: yellow !important;
+	color: black !important;
+}
 
