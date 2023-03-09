@@ -1,0 +1,30 @@
+:root {
+	--color-black: red;
+}
+body {
+	/* background-color: red; */
+}
+.animated {
+	/* width: 100px; */
+	height: 30px;
+	background-color: red;
+	/* transition: 1s width linear; */
+	animation: increase-width 1s infinite;
+}
+/*
+.animated:hover {
+	width: 200px;
+}
+*/
+
+/*
+@keyframes increase-width {
+  from {width: 100px;}
+  to {width: 200px;}
+}
+*/
+@keyframes increase-width {
+  0% {width: 100px;}
+  50% {height: 40px;}
+  100% {width: 200px;}
+}

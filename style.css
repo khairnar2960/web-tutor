@@ -1,9 +1,14 @@
 /*
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 */
+@import url('assets/another.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 @font-face {
 	font-family: 'MyFont';
 	src: url('fonts/GajrajOne-Regular.ttf');
+}
+:root {
+	
 }
 * {
 	box-sizing: border-box;
@@ -22,6 +27,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	position: sticky;
 }
 .nav-logo > img {
 	width: 100px;
@@ -40,10 +46,14 @@ body {
 	color: black;
 	transition: color 0.15s ease-in-out;
 }
-.nav-item a:hover, .nav-btns a:hover {
+.nav-item.active a,
+.nav-btns.active a,
+.nav-item a:hover,
+.nav-btns a:hover {
 	color: blue;
 }
-.nav-item a:after, .nav-btns a:after {
+.nav-item a:after,
+.nav-btns a:after {
 	content: '';
 	position: absolute;
 	bottom: -16px;
@@ -55,7 +65,10 @@ body {
 	border-top-right-radius: 3px;
 	transition: height 0.1s ease-in;
 }
-.nav-item a:hover:after, .nav-btns a:hover:after {
+.nav-item.active a:after,
+.nav-btns.active a:after,
+.nav-item a:hover:after,
+.nav-btns a:hover:after {
 	height: 3px;
 }
 .nav-btns {
@@ -78,7 +91,7 @@ body {
 	border: 2px solid black;
 	padding: 10px;
 	background-color: lightblue;
-	color: black;
+	color: var(--color-black);
 	text-align: justify; /* left, center, right, justify */
 	border-radius: 20px;
 	box-shadow: 2px 2px 5px lightgrey;

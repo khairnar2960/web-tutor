@@ -1,0 +1,11 @@
+CSS Font Icons
+https://boxicons.com/
+https://fontawesome.com/
+https://icons.getbootstrap.com/
+
+Image/png Icons
+
+https://www.flaticon.com/
+https://www.freepik.com/
+https://icons8.com/
+https://icon-sets.iconify.design/bi/arrow-down-right-circle/
