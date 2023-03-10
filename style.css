@@ -8,7 +8,11 @@
 	src: url('fonts/GajrajOne-Regular.ttf');
 }
 :root {
-	
+	--dark-blue: #004860;
+	--light-green: #51b865;
+	--cayan: #33c39a;
+	--deg: -160deg;
+	--gradient: var(--dark-blue), var(--light-green), var(--cayan);
 }
 * {
 	box-sizing: border-box;
@@ -265,4 +269,69 @@ table.hover tr:hover td {
 	background-color: yellow !important;
 	color: black !important;
 }
-
+/* Login Page CSS */
+.auth-form {
+	--deg: 60deg;
+	max-width: 500px;
+	background:  linear-gradient(var(--deg), var(--gradient));
+	width: 100%;
+	padding: 2em;
+	border: 2px solid #ffffffb3;
+	backdrop-filter: blur(20px);
+	border-radius: 1em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.auth-form > *:not(button) {
+	width: 100%;
+}
+.auth-form > button {
+	width: 50%;
+	border-radius: 21px;
+}
+.auth-form input {
+	background-color: white;
+	color: darkgrey;
+	padding: 1em;
+	display: block;
+	width: 100%;
+	border: none;
+	border-radius: 0.25em;
+	text-align: center;
+}
+.full-h-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: linear-gradient(var(--deg), var(--gradient));
+}
+.full-h-center.color-red {
+	background: unset;
+	background-color: red;
+}
+.full-h-center.gradient-new {
+	--gradient: blue, red, black;
+	background: linear-gradient(var(--deg), var(--gradient));
+}
+/*
+@media (min-width: 650px) {
+	body {
+		background-color: red;
+	}
+}
+@media (max-width: 660px) {
+	body {
+		background-color: blue;
+	}
+}
+*/
+@media (max-width: 550px) {
+	main {
+		padding: 1em;
+	}
+}
